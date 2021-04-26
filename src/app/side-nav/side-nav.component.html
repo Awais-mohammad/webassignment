@@ -1,0 +1,58 @@
+<mat-toolbar class="toolbar">
+  <button *ngIf="width<=600 && isHandset$ | async" style="color: white;" type="button" aria-label="Toggle sidenav"
+    mat-icon-button (click)="drawer.toggle()">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+
+  <div *ngIf="width>600" style="display: flex;justify-content: space-between;width: 100%;">
+    <img class="logoimg" src="../../assets/logo.png" alt="">
+
+
+    <div style="display: flex;padding-right: 20px;">
+      <p class="items">HOME</p>
+      <p class="items">CATEGORIES</p>
+      <p class="items">PRODUCTS</p>
+      <p class="items">ABOUT</p>
+      <p class="items">CONTACT</p>
+
+    </div>
+
+  </div>
+
+</mat-toolbar>
+
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" [ngClass]="{hidden:!(isHandset$|async)}" fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) == false">
+
+    <mat-toolbar class="toolbar">
+
+      <span class="label">
+
+      </span>
+
+    </mat-toolbar>
+
+    <mat-nav-list>
+
+      <a mat-list-item href="#">
+        <mat-icon>
+          settings
+        </mat-icon>
+        Menu
+      </a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+
+
+  <ng-content>
+  </ng-content>
+
+</mat-sidenav-container>

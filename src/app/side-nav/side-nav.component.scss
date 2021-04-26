@@ -1,0 +1,80 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 250px;
+  box-shadow: 3px 0 6px #272d3a0e;
+}
+
+.sidenav .mat-toolbar {
+  background-color: #272d3a;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.label {
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  z-index: 10;
+  overflow: visible;
+  background-color: #272d3a;
+  box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
+  transition: 0.3s;
+  font-style: bold;
+  font-family: "Roboto";
+}
+.logoimg {
+  position: relative;
+  top: 0.2em;
+  height: 5em;
+  object-fit: contain;
+}
+
+@media (max-width: 630px) {
+  .logoimg {
+    display: none;
+  }
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items {
+  color: white;
+  transition: 0.3s;
+  font-style: bold;
+  font-size: 16px;
+  position: relative;
+  top: 2em;
+  border:none;
+  font-family: "Raleway", sans-serif;
+  transition: 1s;
+  padding-left: 20px;
+}
+
+.items:hover {
+  cursor: pointer;
+  color: #ee0f6f;
+
+}
+
+////raleway font
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
