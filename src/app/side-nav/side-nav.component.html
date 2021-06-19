@@ -1,4 +1,4 @@
-<mat-toolbar class="toolbar">
+<mat-toolbar id="navbar" class="toolbar">
   <button *ngIf="width<=600 && isHandset$ | async" style="color: white;" type="button" aria-label="Toggle sidenav"
     mat-icon-button (click)="drawer.toggle()">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
@@ -10,10 +10,10 @@
 
     <div style="display: flex;padding-right: 20px;">
       <p class="items">HOME</p>
-      <p class="items">CATEGORIES</p>
-      <p class="items">PRODUCTS</p>
-      <p class="items">ABOUT</p>
-      <p class="items">CONTACT</p>
+      <p class="items">HOME</p>
+      <p class="items">HOME</p>
+      <p class="items">HOME</p>
+      <p class="items">HOME</p>
 
     </div>
 
@@ -35,7 +35,7 @@
 
     </mat-toolbar>
 
-    <mat-nav-list>
+    <mat-nav-list class="nav">
 
       <a mat-list-item href="#">
         <mat-icon>

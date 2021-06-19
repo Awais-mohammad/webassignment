@@ -145,35 +145,14 @@ h4 {
     }
 }
 
+.none {
+    display: none;
+}
+
 .imeghide {
     height: 1em;
     object-fit: contain;
     margin-top: 0.5em;
-}
-
-@media (max-width: 1000px) {
-    .flex {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .card {
-        width: 40%;
-    }
-    .wrapper {
-        position: relative;
-        height: 1750px;
-    }
-    .works {
-        display: none;
-    }
-    .container {
-        padding: 0;
-    }
-    .loopcard {
-        display: flex;
-        width: 50%;
-        flex-wrap: wrap;
-    }
 }
 
 .wrapper {
@@ -235,7 +214,7 @@ h4 {
 }
 .loopcard {
     min-height: 2em;
-    width: 8em;
+    width: 100%;
     margin-top: 1em;
     display: flex;
     padding: 10px;
@@ -251,6 +230,12 @@ h4 {
 
 .width {
     width: 30%;
+}
+.flexi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .footer {
     background-image: linear-gradient(#272d3ada, #272d3a);
@@ -293,5 +278,146 @@ span:hover {
 @media (min-width: 700px) {
     .svg--sm {
         display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 40%;
+    }
+    .wrapper {
+        position: relative;
+        height: 900px;
+    }
+    .works {
+        width: 40%;
+    }
+    .container {
+        padding: 0;
+    }
+    .loopcard {
+        display: flex;
+        width: 30%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 736px) {
+    .containerwrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .containers {
+        width: 40%;
+        margin-top: 10px;
+    }
+    header {
+        height: 850px;
+    }
+    .btnwrapper {
+        position: relative;
+        top: -12em;
+    }
+    .p {
+        position: relative;
+        top: -5em;
+    }
+    h2 {
+        display: none;
+    }
+    .none {
+        display: flex;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        top: -0.8em;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 60%;
+    }
+    .wrapper {
+        position: relative;
+        height: 1050px;
+    }
+    .works {
+        width: 70%;
+    }
+    .loopcard {
+        width: 60%;
+    }
+}
+@media (max-width:1647){
+    .loopcard {
+        display: flex;
+        width: 30%;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 535px) {
+    .containerwrapper {
+        display: flex;
+        position: relative;
+        top: -2em;
+        flex-wrap: wrap;
+    }
+    header {
+        height: 1050px;
+    }
+    .containers {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .none {
+        display: flex;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        top: -1.5em;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+    }
+    .p {
+        padding: 5px;
+    }
+    .btnwrapper {
+        padding: 1px;
+        position: relative;
+        top: -3em;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+    }
+    .works {
+        width: 100%;
+    }
+    .wrapper {
+        position: relative;
+        height: 1200px;
+    }
+    .loopcard {
+        width: 80%;
     }
 }

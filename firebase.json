@@ -1,11 +1,9 @@
 {
   "database": {
-
     "rules": "database.rules.json"
   },
   "hosting": {
-"site": "mydoctorwebprojectassignment",
-    "public": "dist",
+    "public": "dist/material-demo",
     "ignore": [
       "firebase.json",
       "**/.*",
